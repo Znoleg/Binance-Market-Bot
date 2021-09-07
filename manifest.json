@@ -1,0 +1,14 @@
+{
+    "name": "Binance Market Parser",
+    "description": "",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["*://*.binance.com/*/nft/market",
+                "*://*.binance.com/*/nft/blindBox/*"],
+            "js": ["script.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
